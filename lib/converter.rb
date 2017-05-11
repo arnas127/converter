@@ -1,5 +1,5 @@
-require "converter/version"
+require 'converter/version'
+require 'converter/money'
 
 module Converter
-  # Your code goes here...
 end
