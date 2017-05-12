@@ -76,7 +76,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/currency_manager.
+Bug reports and pull requests are welcome on GitHub at https://github.com/arnas127/currency_manager.
 
 
 ## License

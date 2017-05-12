@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Currency managment}
   spec.description   = %q{Operate with currencies by your defined rates}
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/arnas127/converter'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
