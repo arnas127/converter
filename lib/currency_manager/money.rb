@@ -1,4 +1,4 @@
-module Converter
+module CurrencyManager
   class Money
     @@rates = {}
 

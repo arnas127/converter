@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'converter/version'
+require 'currency_manager/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'converter'
-  spec.version       = Converter::VERSION
+  spec.name          = 'currency_manager'
+  spec.version       = CurrencyManager::VERSION
   spec.authors       = ['Arnas Rutkauskas']
   spec.email         = ['arnas127@gmail.com']
 

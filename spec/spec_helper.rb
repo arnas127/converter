@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "converter"
+require "currency_manager"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

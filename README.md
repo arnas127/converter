@@ -1,6 +1,6 @@
-# Converter
+# CurrencyManager
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/converter`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/currency_manager`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
 
@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'converter'
+gem 'currency_manager'
 ```
 
 And then execute:
@@ -18,21 +18,21 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install converter
+    $ gem install currency_manager
 
 ## Usage
 
 ```
 # Configure the currency rates with respect to a base currency (here EUR):
 
-Converter::Money.conversion_rates('EUR', {
+CurrencyManager::Money.conversion_rates('EUR', {
   'USD'     => 1.11,
   'Bitcoin' => 0.0047
 })
 
 # Instantiate money objects:
 
-fifty_eur = Converter::Money.new(50, 'EUR')
+fifty_eur = CurrencyManager::Money.new(50, 'EUR')
 
 # Get amount and currency:
 
@@ -47,7 +47,7 @@ fifty_eur.convert_to('USD') # => 55.50 USD
 
 # Perform operations in different currencies:
 
-twenty_dollars = Converter::Money.new(20, 'USD')
+twenty_dollars = CurrencyManager::Money.new(20, 'USD')
 
 # Arithmetics:
 
@@ -58,13 +58,13 @@ twenty_dollars * 3         # => 60 USD
 
 # Comparisons (also in different currencies):
 
-twenty_dollars == Converter::Money.new(20, 'USD') # => true
-twenty_dollars == Converter::Money.new(30, 'USD') # => false
+twenty_dollars == CurrencyManager::Money.new(20, 'USD') # => true
+twenty_dollars == CurrencyManager::Money.new(30, 'USD') # => false
 
 fifty_eur_in_usd = fifty_eur.convert_to('USD')
 fifty_eur_in_usd == fifty_eur          # => true
 
-twenty_dollars > Converter::Money.new(5, 'USD')   # => true
+twenty_dollars > CurrencyManager::Money.new(5, 'USD')   # => true
 twenty_dollars < fifty_eur             # => true
 ```
 
@@ -76,7 +76,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/converter.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/currency_manager.
 
 
 ## License
